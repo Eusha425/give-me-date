@@ -43,31 +43,31 @@ def find_the_day(user_day,user_month,user_year):
     elif month == 12:
         month_code = 5
 
-    if year>=1600 and year<=1699:
-        year_code=6
-    elif year>=1700 and year<=1799:
-        year_code=4
-    elif year>=1800 and year<=1899:
-        year_code=2
-    elif year>=1900 and year<=1999:
-        year_code=0
-    elif year>=2000 and year<=2099:
-        year_code=6
+    if year >= 1600 and year <= 1699:
+        year_code = 6
+    elif year >= 1700 and year <= 1799:
+        year_code = 4
+    elif year >= 1800 and year <= 1899:
+        year_code = 2
+    elif year >= 1900 and year <= 1999:
+        year_code = 0
+    elif year >= 2000 and year <= 2099:
+        year_code = 6
 
     total = year_end + quotient + date + month_code + year_code
     day = total % 7
 
-    if day==0:
+    if day == 0:
         return "Sunday"
-    elif day==1:
+    elif day == 1:
         return "Monday"
-    elif day==2:
+    elif day == 2:
         return "Tuesday"
-    elif day==3:
+    elif day == 3:
         return "Wednesday"
-    elif day==4:
+    elif day == 4:
         return "Thursday"
-    elif day==5:
+    elif day == 5:
         return "Friday"
-    elif day==6:
+    elif day == 6:
         return "Saturday"

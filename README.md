@@ -15,7 +15,7 @@ It solves a mathematical problem know as [Calendar Problems/Tricks](https://www.
 
 ## Usage
 
-To use the program, download the two [python files](https://github.com/Eusha425/give-me-day) and the [picture]() included. Have the python files and the picture in the same folder as it is the background image of the app.
+To use the program, download the two [python files](https://github.com/Eusha425/give-me-day) and the [picture](https://github.com/Eusha425/give-me-day/blob/main/date.png) included. Have the python files and the picture in the same folder as it is the background image of the app.
 
 ## Screenshots
 

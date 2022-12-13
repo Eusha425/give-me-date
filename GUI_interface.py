@@ -41,7 +41,7 @@ def exit_program():
 
 window = Tk()
 window.geometry("350x300")
-window.title("Calander Problem GUI")
+window.title("Find my Day")
 
 # creating a frame for the picture
 frame = Frame(window, width = 600, height = 400)
@@ -56,7 +56,7 @@ img = ImageTk.PhotoImage(Image.open("date.png"))
 label = Label(frame, image = img)
 label.pack()
 
-label = Label(window, text = "Calander Problem GUI", relief = "raised")
+label = Label(window, text = "Find The Day", font = ("Arial Bold", 15), relief = "raised", background = "Black", foreground = "White")
 label.pack(pady = "20")
 
 months = [
@@ -79,23 +79,23 @@ month_text.set("Months")
 drop_down_menu = OptionMenu(window, month_text, *months)
 drop_down_menu.config(bg = "#C0C0C0", fg = "BLACK", activebackground = "#C0C0F0", activeforeground = "BLACK")
 drop_down_menu["menu"].config(bg = "#C0C0C0", fg = "BLACK", activebackground = "#C0C0F0")
-drop_down_menu.place(x = 105, y = 56)
+drop_down_menu.place(x = 105, y = 73)
 
 date_entry = Entry(relief = SUNKEN, background = "#C0C0C0")
 date_entry.insert(0, 'Enter Date...')
 date_entry.bind('<FocusIn>', date_on_entry_click)
-date_entry.place(y = "60", x = "25", width = 69, height = 25)
+date_entry.place(y = "75", x = "25", width = 69, height = 25)
 
 year_entry = Entry(relief = SUNKEN, background = "#C0C0C0")
 year_entry.insert(0, 'Enter Year (1600-2099)...')
 year_entry.bind('<FocusIn>', year_on_entry_click)
-year_entry.place(y = "60", x = "200", width = 135, height = 25)
+year_entry.place(y = "75", x = "200", width = 135, height = 25)
 
-enter_button = Button(window, text = "Enter", command = get_user_input)
-enter_button.place(y = 95, x = 105, width = 65)
+enter_button = Button(window, text = "Enter", font = ("Arial Bold", 10), command = get_user_input)
+enter_button.place(y = 125, x = 105, width = 65)
 
 date_label = Label(window, text = "")
-date_label.place(y = 97, x = 180)
+date_label.place(y = 127, x = 180)
 
 exit_button = Button(window, text = "Exit", command = exit_program, background = "Red", foreground = "white")
 exit_button.place(y = 250, x = 290, width = 55)

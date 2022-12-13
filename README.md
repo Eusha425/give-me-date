@@ -25,7 +25,7 @@ The files should be in the same directory similar to the example provided below:
 
 How the app is going to look after running in the IDE
 <br></br>
-![app-demo](https://github.com/Eusha425/give-me-day/blob/main/Files%20Help/App%20demo.png)
+![app-demo](https://github.com/Eusha425/give-me-day/blob/main/Files%20Help/App%20Demo.png)
 ## Authors
 
 - [@Eusha425](https://github.com/Eusha425)
